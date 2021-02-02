@@ -9,12 +9,13 @@
     --white-016: rgba(255, 255, 255, 0.16);
     --gray: rgba(106, 106, 106, 1);
     --gray-dark: rgba(40, 39, 44, 1);
-    --gray-light: rgba(178, 178, 178, 1);
-    --gray-lighter: rgba(209, 209, 209, 1);
+    --gray-light: rgb(178, 178, 178);
+    --gray-lighter: rgb(209, 209, 209);
     --font-color: rgba(255,255,255,1);
 }
 body {
     font-family: "Nunito Sans", sans-serif;
+    line-height: 1.5em;
 }
 .container {
     width: 1088px;
@@ -103,12 +104,17 @@ a {
     display: inline-block;
     font-size: 35px;
     font-weight: 800;
+    text-transform: uppercase;
 }
-.logo::before {
-    content: url(../icons/Icon.svg);
+.banner-logo {
     width: 31px;
     height: 35px;
 }
+/*.logo::before {
+    content: url(../icons/Icon.svg);
+    width: 31px;
+    height: 35px;
+}*/
 .logo span > span {
     color: var(--red);
     font-size: 35px;
@@ -315,9 +321,47 @@ a {
     border-radius: 40px;
     box-shadow: 0 3px 6px var(--red-03);
     /*font-family: "Open Sans";*/
-
 }
-
+.footer-bg {
+    background-color: var(--gray-dark);
+    height: 232px;
+}
+/*.footer-box {
+    margin-bottom: 40px;
+}*/
+.footer-logo-img {
+    width: 16px;
+    height: 19px;
+}
+.footer-logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--white);
+    padding: 40px 0 20px 0;
+}
+.footer-logo span > span {
+    color: var(--red);
+}
+.footer-content {
+    display: flex;
+    gap: 140px;
+}
+.footer-column a {
+    color: var(--white);
+    font-size: 14px;
+}
+.footer-column a:hover {
+    color: var(--red);
+}
+.copyright {
+    font-size: 12px;
+    color: var(--gray-lighter);
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 
 
