@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project Car</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="god">
@@ -95,7 +95,29 @@
                 </article>
             </div>
     </section>
-    <section class="contact-box"></section>
+    <section class="section-box contact-box">
+        <h2 class="section-title contact-box-title">contact</h2>
+        <div class="contact-box-content">
+            <img class="contact-img" src="images/Form%20Photo.png" alt="form">
+            <form class="form-box">
+                <label class="form-name-label" for="name">
+                    <input class="form-name" type="text" id="name" placeholder="Type your name">
+                </label>
+                <label  for="email">
+                    <input class="form-email" type="email" id="email" placeholder="Type your e-mail">
+                </label>
+                <label  for="msg">
+                    <textarea class="form-txt" id="msg" placeholder="Type your message"></textarea>
+                </label>
+                <label class="ch-box">
+                    <input type="checkbox">
+                    <span class="ch-box-win"></span>
+                    <span class="ch-box-txt">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</span>
+                </label>
+                <button class="form-btn" type="submit">send</button>
+            </form>
+        </div>
+    </section>
 </main>
 <footer></footer>
 </body>
